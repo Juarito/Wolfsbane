@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $('#myForm').submit(function (e) {
+        e.preventDefault(); // to prevent bubbling
+        var fname = $('#fname').val();
+        var lname = $('#lname').val();
+        var email = $('#email').val();
+        $('.error').remove();
+        // name validation
+        if (fname.length < 1) {
+          $('#fname').after('<div><span class="error">Complete First Name field</span></div>')
+          $('#fname').focus();
+          return false;
+        }
+        if (lname.length < 1) {
+          $('#lname').after('<div><span class="error">Complete Last Name field</span></div>')
+          $('#lname').focus();
+          return false;
+        }
+        //email validation
+        if (email.length < 1) {
+          $('#email').after('<div><span class="error">Complete Email field</span></div>')
+          $('#email').focus();
+          return false;
+        } else {
+          var regEx = /^[a-zA-Z0-9.!#$%&'*+/=?^_'{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+          var validEmail = regEx.test(email);
+          if (validEmail === false) {
+            $('#email').after('<div><span class="error">Enter a valid email address</span></div>');
+            $('#fname').focus();
+            return false;
+          }
+        }
+
+      });
+    });
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <div id="wrapper">
+    <header>
+      <img src="images/wolf.svg" class="wolfie" alt="This is a oulined icon of a wolf." />
+      <!-- <img src="images/hamburger.svg" class="hammie" /> -->
+      <nav id="myNav">
+        <a href="about.html" class="first">About</a>
+        <a href="registration.html" class="second">Registration</a>
+        <a href="index.html" class="middle" id="biggie">Wolfsbane</a>
+        <a href="contact.html" class="fourth">Contact</a>
+        <a href="serum.html" class="end">Serum</a>
+      </nav>
+      <nav class="topnav" id="myTopnav">
+        <a href="about.html" class="active notIcon">About</a>
+        <a href="registration.html" class="notIcon">Registration</a>
+        <a href="index.html" class="notIcon">Wolfsbane</a>
+        <a href="contact.html" class="notIcon">Contact</a>
+        <a href="serum.html" class="notIcon">Serum</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </nav>
+    </header>
+    <div id="Hero">
+      <img src="images/contact.png" alt="This is an image of a wolf howling at the moon."/>
+    </div>
+    <h2>Contact us below</h2>
+    <section id="oneColumn">
+      <article>
+        <form id="myForm" class="block">
+          <div class="myDiv block">
+            <div>
+              <label for="fname">First Name:</label>
+            </div>
+            <div><input type="text" id="fname" name="fname" class="blu" />
+            </div>
+            <div>
+              <label for="lname">Last Name:</label>
+            </div>
+            <div>
+              <input type="text" id="lname" name="lname" class="blu" />
+            </div>
+            <div>
+              <label for="email">Email:</label>
+            </div>
+
+            <input type="text" id="email" name="email" class="blu" />
+            <div>
+              <input type="submit" class="button" value="Submit" />
+            </div>
+          </div>
+        </form>
+      </article>
+    </section>
+    <footer>
+      <small>Copyright &copy; 2022. All Rights Reserved.</small>
+    </footer>
+  </div>
+</body>
+
+</html>

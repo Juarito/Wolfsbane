@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Authority</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <header>
+        <img src="images/wolf.svg" class="wolfie" alt="This is a oulined icon of a wolf." />
+        <!-- <img src="images/hamburger.svg" class="hammie" /> -->
+        <nav id="myNav">
+            <a href="about.html" class="first">About</a>
+            <a href="registration.html" class="second">Registration</a>
+            <a href="index.html" class="middle" id="biggie">Wolfsbane</a>
+            <a href="contact.html" class="fourth">Contact</a>
+            <a href="serum.html" class="end">Serum</a>
+        </nav>
+        <nav class="topnav" id="myTopnav">
+            <a href="about.html" class="active notIcon">About</a>
+            <a href="registration.html" class="notIcon">Registration</a>
+            <a href="index.html" class="notIcon">Wolfsbane</a>
+            <a href="contact.html" class="notIcon">Contact</a>
+            <a href="serum.html" class="notIcon">Serum</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+    </header>
+      <div id="Hero">
+        <img src="images/authority.png" />
+      </div>
+      <h2>Authority</h2>
+      <section id="oneColumn">
+        <article>
+          <img src="images/spiritclaw.jpeg"/>
+          <p>
+            The authority of the words of the elders of the spirit tribe come
+            from the spirt of Father Wolf and Mother Luna.
+          </p>
+          <p>
+            In the spirit world, Father Wolf and Mother Luna came together and
+            seen that there was a need to balance some of the spirit influence
+            in the world that they did not feel was good.
+          </p>
+          <p>
+            To counterbalance the negative influence of certain spirits, Lycans
+            were given gifts to use for these purposes. Lycans were given the
+            benefits of the speed, strength, ferocity and heightened senses. And
+            mother Luna blessed us with the ability to shift and change as does
+            the phases of the moon.
+          </p>
+          <p>
+            Father Wolf and Mother Luna blessed the Spirit Claw tribe with a
+            direct line of communication through their shamans and seers. They
+            are to give wisdom and direction to all that have been blessed Lycan
+            gifts. It the will of Father Wolf and Mother Luna for the entire
+            Lycan community to listen and follow their directives. The elders of
+            the Spirit Claw tribe shall rule the Lycans.
+          </p>
+        </article>
+      </section>
+      <footer>
+        <small>Copyright &copy; 2022. All Rights Reserved.</small>
+      </footer>
+    </div>
+  </body>
+</html>

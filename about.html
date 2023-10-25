@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <header>
+        <img src="images/wolf.svg" class="wolfie" alt="This is a oulined icon of a wolf." />
+        <!-- <img src="images/hamburger.svg" class="hammie" /> -->
+        <nav id="myNav">
+            <a href="about.html" class="first">About</a>
+            <a href="registration.html" class="second">Registration</a>
+            <a href="index.html" class="middle" id="biggie">Wolfsbane</a>
+            <a href="contact.html" class="fourth">Contact</a>
+            <a href="serum.html" class="end">Serum</a>
+        </nav>
+        <nav class="topnav" id="myTopnav">
+            <a href="about.html" class="active notIcon">About</a>
+            <a href="registration.html" class="notIcon">Registration</a>
+            <a href="index.html" class="notIcon">Wolfsbane</a>
+            <a href="contact.html" class="notIcon">Contact</a>
+            <a href="serum.html" class="notIcon">Serum</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+    </header>
+      <div id="Hero">
+        <img src="images/about.png" />
+      </div>
+      <h2>About Wolfsbane</h2>
+      <section id="oneColumn">
+        <article>
+          <p>
+            let us start off by saying that this website is not intended to be
+            offered to the whole world. This website was designed to bring the
+            wolfsbane serum to all of the Lycan within the north Americas. Just
+            within the Lycan communities. In other words, werewolves. You shall
+            not show or give access to this website to anybody outside of the
+            Lycan community.
+          </p>
+          <p>
+            The two different types of wolfsbane serum that we are offering are
+            the Full Moon Serum and the Half Moon Serum.
+          </p>
+          <p>
+            Anyone within the Lycan community can purchase the Full Moon Serums.
+            You must get special permission to get the Half Moon Serum granted
+            to you by a member of the Spirit Claw tribe.
+          </p>
+        </article>
+      </section>
+      <section id="twoColumn">
+        <article class="about">
+          <h3><a href="shamana.html">Shamana</a></h3>
+          <img src="images/shamana.jpg"/>
+          <p>
+            Hear the words of the great Shamana, elder of the Spirit Claw Tribe.
+            Blessed by Father Wolf and Mother Luna to speak their words to their
+            Lycan children.
+          </p>
+        </article>
+        <article class="about">
+          <h3><a href="authority.html">Authority</a></h3>
+          <img src="images/spiritclaw.jpeg"/>
+          <p>
+            This website was built by a web developer with kycan blood under the
+            direction of Shamana and the Spirit Claw tribe. Click this link for
+            more info.
+          </p>
+        </article>
+      </section>
+
+      <footer>
+        <small>Copyright &copy; 2022. All Rights Reserved.</small>
+      </footer>
+    </div>
+  </body>
+</html>

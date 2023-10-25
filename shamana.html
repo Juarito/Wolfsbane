@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Shamana</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <header>
+        <img src="images/wolf.svg" class="wolfie" alt="This is a oulined icon of a wolf." />
+        <!-- <img src="images/hamburger.svg" class="hammie" /> -->
+        <nav id="myNav">
+            <a href="about.html" class="first">About</a>
+            <a href="registration.html" class="second">Registration</a>
+            <a href="index.html" class="middle" id="biggie">Wolfsbane</a>
+            <a href="contact.html" class="fourth">Contact</a>
+            <a href="serum.html" class="end">Serum</a>
+        </nav>
+        <nav class="topnav" id="myTopnav">
+            <a href="about.html" class="active notIcon">About</a>
+            <a href="registration.html" class="notIcon">Registration</a>
+            <a href="index.html" class="notIcon">Wolfsbane</a>
+            <a href="contact.html" class="notIcon">Contact</a>
+            <a href="serum.html" class="notIcon">Serum</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+    </header>
+      <div id="Hero">
+        <img src="images/shamanahero.png" />
+      </div>
+      <h2>Shamana</h2>
+      <section id="oneColumn">
+        <article>
+          <img src="images/shamana.jpg"/>
+          <p>
+            Hear the words of Shamana, one of the greatest elders of the spirit
+            claw tribe.
+          </p>
+          <p>
+            It has been bestowed upon the Spirit Claw tribe to govern those
+            Lycans who cannot follow the policies that have been given by Father
+            Wolf and Mother Luna.
+          </p>
+          <p>
+            It is their will for us to live peacefully with humans and to
+            protect them from the negative spiritual influences that come from
+            the spirit world. We are not here to be a burden to them in any way.
+            If you are not able to handle the gifts of changing or use your
+            gifts in any way that brings that harm to the Lycan community or
+            humankind, you will be hunted down and judged accordingly.
+          </p>
+          <p>
+            There are those who have proven that they cannot handle their gifts
+            and MUST take the Full Moon serum. The Full Moon serum will prevent
+            you from changing completely.
+          </p>
+          <p>
+            The Half Moon serum will allow a Lycan to shapeshift at will.
+            Totally voluntary. By the power invested in me by the spirit of
+            Father Wolf and Mother Luna, I hereby declare that no one shall
+            partake of the Half Moon serum unless you are in good standing with
+            Father Wolf, Mother Luna and the Spirit Claw tribe.
+          </p>
+        </article>
+      </section>
+      <footer>
+        <small>Copyright &copy; 2022. All Rights Reserved.</small>
+      </footer>
+    </div>
+  </body>
+</html>

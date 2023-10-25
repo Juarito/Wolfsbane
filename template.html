@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Template</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <header>
+        <img src="images/wolf.svg" class="wolfie" alt="This is a oulined icon of a wolf." />
+        <!-- <img src="images/hamburger.svg" class="hammie" /> -->
+        <nav id="myNav">
+            <a href="about.html" class="first">About</a>
+            <a href="" class="second">Registration</a>
+            <a href="index.html" class="middle" id="biggie">Wolfsbane</a>
+            <a href="contact.html" class="fourth">Contact</a>
+            <a href="serum.html" class="end">Serum</a>
+        </nav>
+        <nav class="topnav" id="myTopnav">
+            <a href="about.html" class="active notIcon">About</a>
+            <a href="registration.html" class="notIcon">Registration</a>
+            <a href="index.html" class="notIcon">Wolfsbane</a>
+            <a href="contact.html" class="notIcon">Contact</a>
+            <a href="serum.html" class="notIcon">Serum</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+    </header>
+      <div id="Hero">
+        <img src="images/TransparentWolf.png" />
+      </div>
+      <section id="articles">
+        <article>
+          <h3><a href="#">Something</a></h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+            accumsan tellus eu venenatis pharetra. Aenean tempus dolor et sapien
+            mollis, sed dictum dolor interdum. Maecenas porta fermentum nunc ut
+            malesuada. Nullam sagittis mattis tempor. Fusce rutrum orci posuere,
+            accumsan nisi vitae, vulputate nibh. Curabitur porttitor ut magna et
+            sagittis.
+          </p>
+        </article>
+        <article>
+          <h3><a href="#">Something</a></h3>
+          <p>
+            Duis ornare lacus at libero laoreet, vitae feugiat est pretium.
+            Quisque quis accumsan dui. Quisque ac ipsum mauris. Proin
+            pellentesque arcu lorem, vitae rutrum enim tincidunt a. Vestibulum
+            tristique ex ut pulvinar fermentum. Maecenas non quam tristique
+            ipsum dignissim hendrerit at id massa.
+          </p>
+        </article>
+        <article>
+          <h3><a href="#">Something</a></h3>
+          <p>
+            Integer convallis, elit quis lobortis congue, ante enim suscipit
+            tortor, at tincidunt est justo eu augue. Morbi vel mauris malesuada
+            arcu elementum pharetra. Fusce commodo metus sed velit tristique,
+            vitae sodales sem facilisis. Fusce eleifend augue vitae felis
+            iaculis, ut pharetra leo luctus. Morbi vel augue vitae augue viverra
+            egestas et nec felis.
+          </p>
+        </article>
+        <article>
+          <h3><a href="#">Something</a></h3>
+          <p>
+            Orci varius natoque penatibus et magnis dis parturient montes,
+            nascetur ridiculus mus. Nulla vel eros nec arcu fermentum aliquet.
+            Integer ac magna semper erat eleifend feugiat. Mauris vulputate
+            magna nunc, ut porta nisl gravida ac. Orci varius natoque penatibus
+            et magnis dis parturient montes, nascetur ridiculus mus.
+          </p>
+        </article>
+      </section>
+
+      <footer>
+        <small>Copyright &copy; 2022. All Rights Reserved.</small>
+      </footer>
+    </div>
+  </body>
+</html>
